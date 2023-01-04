@@ -1,3 +1,154 @@
+body {
+  margin: auto;
+}
 
+.header {
+  display: flex;
+  justify-content: center;
+  height: 55px;
+}
+.header a {
+  display: flex;
+}
+.header a img {
+  display: flex;
+  align-self: center;
+  height: 30px;
+}
+
+.locate {
+  display: flex;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  justify-content: center;
+}
+.locate div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.locate div i {
+  color: #353535;
+}
+.locate div p {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: medium;
+  color: #525252;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #f7f7f7;
+  padding: 40px 0 40px 0;
+}
+.explore h1 {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: x-large;
+  text-align: center;
+  width: 250px;
+}
+.explore h2 {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: large;
+  text-align: center;
+  width: 350px;
+}
+.explore div {
+  padding: 10px;
+}
+.explore div a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.explore div a p {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: medium;
+  color: #ffffff;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  padding: 15px 20px 15px 20px;
+  border-radius: 25px;
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 40px 0;
+  gap: 20px;
+}
+.process h1 {
+  margin: 0 0 0 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: x-large;
+}
+.process__div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 0 25px;
+  gap: 20px;
+}
+.process__div__button {
+  display: flex;
+}
+.process__div__button > div {
+  position: absolute;
+  left: 13px;
+  align-self: center;
+}
+.process__div__button > div p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: small;
+  color: #ffffff;
+  margin: inherit;
+  background-color: #9356DC;
+  padding: 4px 7px 4px 7px;
+  border-radius: 100%;
+}
+.process__div__button > a {
+  width: 100%;
+  color: inherit;
+  text-decoration: inherit;
+  display: flex;
+  gap: 25px;
+}
+.process__div__button > a div {
+  width: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  padding: 25px 30px;
+  gap: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.process__div__button > a div i {
+  display: flex;
+  align-items: center;
+  color: #7e7e7e;
+}
+.process__div__button > a div p {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: medium;
+}
+.process__div__button > a:hover div {
+  background-color: #f5edff;
+}
+.process__div__button > a:hover div i {
+  color: #9356DC;
+}
 
 /*# sourceMappingURL=style.css.map */

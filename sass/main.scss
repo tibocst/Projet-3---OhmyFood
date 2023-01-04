@@ -1,1 +1,162 @@
 // npm run sass pour lancer sass
+
+body {
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    & a {
+        display: flex;
+        & img {
+            display: flex;
+            align-self: center;
+            height: 30px;
+        }
+    }
+}
+
+.locate {
+    display: flex;
+    background-color: #eaeaea;
+    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    justify-content: center;
+    & div {
+        display: flex;
+        align-items: center;
+        
+        gap: 15px;
+        & i {
+            color: #353535;
+        }
+
+        & p {
+            margin: inherit;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: medium;
+            color: #525252;
+        }
+    }
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #f7f7f7;
+    padding: 40px 0 40px 0;
+    & h1 {
+        margin: inherit;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: x-large;
+        text-align: center;
+        width: 250px;
+    }
+    & h2 {
+        margin: inherit;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: large;
+        text-align: center;
+        width: 350px;
+    }
+    & div {
+        padding: 10px;
+        & a {
+            color: inherit;
+            text-decoration: inherit;
+            
+            & p {
+                margin: inherit;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: medium;
+                color: #ffffff;
+                background : linear-gradient(to bottom right,  #FF79DA, #9356DC);
+                padding: 15px 20px 15px 20px;
+                border-radius: 25px;
+            }
+        }
+    }
+}
+
+.process {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 40px 0;
+    gap: 20px;
+    & h1 {
+        margin: 0 0 0 15px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: x-large;
+    }
+    &__div {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px 0 25px;
+        gap: 20px;
+        &__button {
+            display: flex;
+            & > div {
+                position: absolute;
+                left: 13px;
+                align-self: center;
+                & p {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: small;
+                    color: #ffffff;
+                    margin: inherit;
+                    background-color: #9356DC;
+                    padding: 4px 7px 4px 7px;
+                    border-radius: 100%;
+                }
+            }
+
+            & > a {
+                width: 100%;
+                color: inherit;
+                text-decoration: inherit;
+                display: flex;
+                gap: 25px;
+                & div {
+                    width: 100%;
+                    background-color: #f7f7f7;
+                    display: flex;
+                    padding: 25px 30px;
+                    gap: 20px;
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+                    border-radius: 15px;
+                    & i {
+                        display: flex;
+                        align-items: center;
+                        color: #7e7e7e;
+                    }
+                    & p {
+                        margin: inherit;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 700;
+                        font-size: medium;
+                    }
+                }
+            }
+
+            & > a:hover {
+                & div {
+                    background-color: #f5edff;
+                    & i {
+                        color: #9356DC;
+                    }
+                }
+            }
+        }
+    }
+}
+
