@@ -73,10 +73,11 @@ body {
 .explore div a p {
   margin: inherit;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: medium;
+  font-weight: 400;
+  font-size: 0.95em;
   color: #ffffff;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 15px 20px 15px 20px;
   border-radius: 25px;
 }
@@ -155,6 +156,8 @@ body {
 .restaurant {
   display: flex;
   flex-direction: column;
+  background-color: #f7f7f7;
+  padding: 50px 0;
 }
 .restaurant > h1 {
   margin: 0 0 0 15px;
@@ -169,25 +172,13 @@ body {
   gap: 15px;
 }
 .restaurant > div .restaurant__card {
-  text-decoration: inherit;
-  color: inherit;
-}
-.restaurant > div .restaurant__card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.restaurant > div .restaurant__card__div {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   position: relative;
 }
-.restaurant > div .restaurant__card__div__newbutton {
+.restaurant > div .restaurant__card__newbutton {
   position: absolute;
   background-color: #99e2d0;
   padding: 5px 10px;
@@ -195,59 +186,112 @@ body {
   right: 15px;
   top: 15px;
 }
-.restaurant > div .restaurant__card__div__newbutton p {
+.restaurant > div .restaurant__card__newbutton p {
   margin: inherit;
   color: #1f9a7b;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 0.9em;
 }
-.restaurant > div .restaurant__card__div__img img {
+.restaurant > div .restaurant__card__img img {
   object-fit: cover;
   width: 100%;
   height: 170px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.restaurant > div .restaurant__card__div__description {
+.restaurant > div .restaurant__card__description {
   display: flex;
   justify-content: space-between;
   padding: 15px;
 }
-.restaurant > div .restaurant__card__div__description div:nth-child(1) {
+.restaurant > div .restaurant__card__description div:nth-child(1) {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.restaurant > div .restaurant__card__div__description div:nth-child(1) h2 {
+.restaurant > div .restaurant__card__description div:nth-child(1) h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-size: 1.1em;
   margin: inherit;
 }
-.restaurant > div .restaurant__card__div__description div:nth-child(1) p {
+.restaurant > div .restaurant__card__description div:nth-child(1) h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+.restaurant > div .restaurant__card__description div:nth-child(1) h2 a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.restaurant > div .restaurant__card__description div:nth-child(1) p {
   margin: inherit;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 0.95em;
 }
-.restaurant > div .restaurant__card__div__description__heart {
-  position: relative;
-}
-.restaurant > div .restaurant__card__div__description__heart div:nth-child(1) {
-  pointer-events: none;
-}
-.restaurant > div .restaurant__card__div__description__heart div:nth-child(1) > button {
-  pointer-events: none;
-}
-.restaurant > div .restaurant__card__div__description__heart div:nth-child(1) > button:active {
-  display: none;
-}
-.restaurant > div .restaurant__card__div__description__heart--active {
-  display: none;
-}
-.restaurant > div .restaurant__card__div__description__heart--active:active {
+.restaurant > div .restaurant__card__description__heart {
   display: flex;
+  justify-content: center;
+  padding-right: 10px;
+}
+.restaurant > div .restaurant__card__description__heart > button {
+  position: relative;
+  background-color: inherit;
+  border: inherit;
+  padding: 0;
+}
+.restaurant > div .restaurant__card__description__heart > button i:nth-child(1) {
+  color: #525252;
+}
+.restaurant > div .restaurant__card__description__heart > button i:nth-child(2) {
+  display: none;
+}
+.restaurant > div .restaurant__card__description__heart > button:active i:nth-child(1) {
+  display: none;
+}
+.restaurant > div .restaurant__card__description__heart > button:active i:nth-child(2) {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #353535;
+  padding: 25px;
+}
+footer a {
+  color: inherit;
+  text-decoration: inherit;
+}
+footer div:nth-child(1) > img {
+  height: 1.1em;
+}
+footer div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer div:nth-child(2) div a {
+  display: flex;
+  gap: 10px;
+}
+footer div:nth-child(2) div a i {
+  align-self: center;
+  color: white;
+  width: 10px;
+}
+footer div:nth-child(2) div a p {
+  color: white;
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.96em;
 }
 
 /*# sourceMappingURL=style.css.map */

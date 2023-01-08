@@ -75,10 +75,11 @@ body {
             & p {
                 margin: inherit;
                 font-family: 'Roboto', sans-serif;
-                font-weight: 500;
-                font-size: medium;
+                font-weight: 400;
+                font-size: 0.95em;
                 color: #ffffff;
                 background : linear-gradient(to bottom right,  #FF79DA, #9356DC);
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
                 padding: 15px 20px 15px 20px;
                 border-radius: 25px;
             }
@@ -164,6 +165,8 @@ body {
 .restaurant {
     display: flex;
     flex-direction: column;
+    background-color: #f7f7f7;
+    padding: 50px 0;
 
     & > h1 {
         margin: 0 0 0 15px;
@@ -178,18 +181,7 @@ body {
         padding: 20px;
         gap: 15px;
 
-    .restaurant__card {
-        text-decoration: inherit;
-        color: inherit;
-        &::after {
-            content: "";
-            position: absolute;
-		    top: 0;
-		    right: 0;
-		    bottom: 0;
-		    left: 0;
-        }
-        &__div {
+        .restaurant__card {
             display: flex;
             flex-direction: column;
             border-radius: 15px;
@@ -235,6 +227,18 @@ body {
                         font-weight: 800;
                         font-size: 1.1em;
                         margin: inherit;
+                        & a {
+                            text-decoration: none;
+                            color: inherit; 
+                            &::after {
+                                    content: "";
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    left: 0;
+                            }
+                        }
                     }
                     & p {
                         margin: inherit;
@@ -245,29 +249,74 @@ body {
                 }
                 
                 &__heart {
-                    position: relative;
-                    & div:nth-child(1) {
-                        pointer-events: none;
+                        display: flex;
+                        justify-content: center;
+                        padding-right: 10px;
                         & > button {
-                            pointer-events: none;
-                            &:active {
+                            position: relative;
+                            background-color: inherit;
+                            border: inherit;
+                            padding: 0;
+                            & i:nth-child(1) {
+                                color: #525252;
+                            }
+                            & i:nth-child(2) {
                                 display: none;
                             }
-                        }
-                        
-                    }
 
-                    &--active{
-                        display: none;
+                            &:active {
+                                & i:nth-child(1) {
+                                    display: none;
+                                }
 
-                        &:active{
-                            display: flex;
+                                & i:nth-child(2) {
+                                    display: flex;
+                                }
+                            }
                         }
-                    }
                 }
             }
         }
     }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #353535;
+    padding: 25px;
+    & a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    & div:nth-child(1) {
+        & > img {
+            height: 1.1em;
+        }
+    }
+    & div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        & div {
+            & a {
+                display: flex;
+                gap: 10px;
+                & i {
+                    align-self: center;
+                    color: white;
+                    width: 10px;
+                }
+                & p {
+                    color: white;
+                    margin: inherit;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: 0.96em;
+                }
+            }
+        }
     }
 }
 
