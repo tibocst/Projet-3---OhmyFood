@@ -1,0 +1,47 @@
+.button__gradient {
+    padding: 10px;
+    & a {
+        color: inherit;
+        text-decoration: inherit;
+        
+        & p {
+            margin: inherit;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 0.95em;
+            color: #ffffff;
+            background : linear-gradient(to bottom right,  #FF79DA, #9356DC);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            padding: 15px 20px 15px 20px;
+            border-radius: 25px;
+        }
+    }
+}
+
+.button__heart {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    & > button {
+        position: relative;
+        background-color: inherit;
+        border: inherit;
+        padding: 0;
+        & i:nth-child(1) {
+            color: #525252;
+        }
+        & i:nth-child(2) {
+            display: none;
+        }
+
+        &:active {
+            & i:nth-child(1) {
+                display: none;
+            }
+
+            & i:nth-child(2) {
+                display: flex;
+            }
+        }
+    }
+}

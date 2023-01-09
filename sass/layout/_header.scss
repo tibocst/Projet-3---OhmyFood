@@ -1,0 +1,23 @@
+.header {
+    position: relative;
+    display: flex;
+    height: 55px;
+    & > a:nth-child(1) {
+        margin: auto;
+        display: flex;
+        & img {
+            display: flex;
+            align-self: center;
+            height: 30px;
+        }
+    }
+
+    & > a:nth-child(2) {
+        position: absolute;
+        display: flex;
+        text-decoration: inherit;
+        color: #525252;
+        align-self: center;
+        left: 25px;
+    }
+}
