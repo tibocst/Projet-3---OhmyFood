@@ -20,6 +20,16 @@ body {
   padding: 15px 20px 15px 20px;
   border-radius: 25px;
 }
+.button__gradient--menu {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.button__gradient--menu a p {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
 
 .button__heart {
   display: flex;
@@ -109,6 +119,51 @@ body {
   font-size: 0.95em;
 }
 
+.card__plat {
+  box-shadow: 3px 5px 10px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card__plat > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card__plat > div:nth-child(1) h3 {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.card__plat > div:nth-child(1) p {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.95em;
+}
+.card__plat > div:nth-child(2) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-basis: 40px;
+}
+.card__plat > div:nth-child(2) h3 {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+.card__plat > div:nth-child(3) {
+  display: none;
+}
+
+.border__bottom__half {
+  border-top: 3px solid #99E2D0;
+  width: 40px;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -168,10 +223,56 @@ footer div:nth-child(2) div a p {
   font-size: 0.96em;
 }
 
-.background-image img {
+.background__image {
+  position: relative;
+}
+.background__image img {
   width: 100%;
   object-fit: cover;
   height: 275px;
+}
+.background__image__div {
+  width: 100%;
+  background-color: white;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  bottom: 0;
+}
+.background__image__div h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  font-size: 1.8em;
+  padding-left: 15px;
+  margin: inherit;
+  align-self: center;
+}
+.background__image__div > div {
+  padding-right: 40px;
+}
+
+.menu {
+  padding: 0 10px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.menu h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  opacity: 0.8;
+  margin: 5px 0;
+}
+.menu > div > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0;
 }
 
 .locate {
