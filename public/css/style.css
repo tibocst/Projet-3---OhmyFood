@@ -240,7 +240,7 @@ footer div:nth-child(2) div a p {
   justify-content: space-between;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  bottom: 0;
+  bottom: -40px;
 }
 .background__image__div h1 {
   font-family: "Shrikhand", cursive;
@@ -255,8 +255,7 @@ footer div:nth-child(2) div a p {
 }
 
 .menu {
-  padding: 0 10px;
-  padding-bottom: 50px;
+  padding: 40px 10px 50px 10px;
   display: flex;
   flex-direction: column;
   gap: 40px;
