@@ -1,17 +1,315 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 15 | @import "./layout/nav";
- *    |         ^^^^^^^^^^^^^^
- *    '
- *   sass\main.scss 15:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 15 \2502  @import \"./layout/nav\";\d\a    \2502          ^^^^^^^^^^^^^^\a    \2575 \a   sass\\main.scss 15:9  root stylesheet";
+body {
+  margin: auto;
 }
+
+.button__gradient {
+  padding: 10px;
+}
+.button__gradient a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.button__gradient a p {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.95em;
+  color: #ffffff;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px 20px 15px 20px;
+  border-radius: 25px;
+}
+
+.button__heart {
+  display: flex;
+  justify-content: center;
+  padding-right: 10px;
+}
+.button__heart > button {
+  position: relative;
+  background-color: inherit;
+  border: inherit;
+  padding: 0;
+}
+.button__heart > button i:nth-child(1) {
+  color: #525252;
+}
+.button__heart > button i:nth-child(2) {
+  display: none;
+}
+.button__heart > button:active i:nth-child(1) {
+  display: none;
+}
+.button__heart > button:active i:nth-child(2) {
+  display: flex;
+}
+
+.restaurant__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.restaurant__card__newbutton {
+  position: absolute;
+  background-color: #99e2d0;
+  padding: 5px 10px;
+  border-radius: 2px;
+  right: 15px;
+  top: 15px;
+}
+.restaurant__card__newbutton p {
+  margin: inherit;
+  color: #1f9a7b;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+.restaurant__card__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 170px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant__card__description {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.restaurant__card__description div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.restaurant__card__description div:nth-child(1) h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 1.1em;
+  margin: inherit;
+}
+.restaurant__card__description div:nth-child(1) h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+.restaurant__card__description div:nth-child(1) h2 a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.restaurant__card__description div:nth-child(1) p {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.95em;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  height: 55px;
+}
+.header > a:nth-child(1) {
+  margin: auto;
+  display: flex;
+}
+.header > a:nth-child(1) img {
+  display: flex;
+  align-self: center;
+  height: 30px;
+}
+.header > a:nth-child(2) {
+  position: absolute;
+  display: flex;
+  text-decoration: inherit;
+  color: #525252;
+  align-self: center;
+  left: 25px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #353535;
+  padding: 25px;
+}
+footer a {
+  color: inherit;
+  text-decoration: inherit;
+}
+footer div:nth-child(1) > img {
+  height: 1.1em;
+}
+footer div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer div:nth-child(2) div a {
+  display: flex;
+  gap: 10px;
+}
+footer div:nth-child(2) div a i {
+  align-self: center;
+  color: white;
+  width: 10px;
+}
+footer div:nth-child(2) div a p {
+  color: white;
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.96em;
+}
+
+.background-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 275px;
+}
+
+.locate {
+  display: flex;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  justify-content: center;
+}
+.locate div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.locate div i {
+  color: #353535;
+}
+.locate div p {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: medium;
+  color: #525252;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #f7f7f7;
+  padding: 40px 0 40px 0;
+}
+.explore h1 {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: x-large;
+  text-align: center;
+  width: 250px;
+}
+.explore h2 {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: large;
+  text-align: center;
+  width: 350px;
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 40px 0;
+  gap: 20px;
+}
+.process h1 {
+  margin: 0 0 0 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: x-large;
+}
+.process__div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 0 25px;
+  gap: 20px;
+}
+.process__div__button {
+  display: flex;
+  position: relative;
+}
+.process__div__button > div {
+  position: absolute;
+  left: -9px;
+  align-self: center;
+}
+.process__div__button > div p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: small;
+  color: #ffffff;
+  margin: inherit;
+  background-color: #9356DC;
+  padding: 4px 7px 4px 7px;
+  border-radius: 100%;
+}
+.process__div__button > a {
+  width: 100%;
+  color: inherit;
+  text-decoration: inherit;
+  display: flex;
+  gap: 25px;
+}
+.process__div__button > a div {
+  width: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  padding: 25px 30px;
+  gap: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.process__div__button > a div i {
+  display: flex;
+  align-items: center;
+  color: #7e7e7e;
+}
+.process__div__button > a div p {
+  margin: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: medium;
+}
+.process__div__button > a:hover div {
+  background-color: #f5edff;
+}
+.process__div__button > a:hover div i {
+  color: #9356DC;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+.restaurant > h1 {
+  margin: 0 0 0 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: x-large;
+}
+.restaurant > div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
