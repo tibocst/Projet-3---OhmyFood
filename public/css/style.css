@@ -3,17 +3,26 @@ body {
 }
 
 .header {
+  position: relative;
   display: flex;
-  justify-content: center;
   height: 55px;
 }
-.header a {
+.header > a:nth-child(1) {
+  margin: auto;
   display: flex;
 }
-.header a img {
+.header > a:nth-child(1) img {
   display: flex;
   align-self: center;
   height: 30px;
+}
+.header > a:nth-child(2) {
+  position: absolute;
+  display: flex;
+  text-decoration: inherit;
+  color: #525252;
+  align-self: center;
+  left: 25px;
 }
 
 .locate {
@@ -292,6 +301,12 @@ footer div:nth-child(2) div a p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 0.96em;
+}
+
+.background-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 275px;
 }
 
 /*# sourceMappingURL=style.css.map */

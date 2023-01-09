@@ -1,20 +1,50 @@
 // npm run sass pour lancer sass
 
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/container";
+@import "./layout/form";
+
+
+@import "./pages/menu_a_la_francaise";
+
+
+
 body {
     margin: auto;
 }
 
 .header {
+    position: relative;
     display: flex;
-    justify-content: center;
     height: 55px;
-    & a {
+    & > a:nth-child(1) {
+        margin: auto;
         display: flex;
         & img {
             display: flex;
             align-self: center;
             height: 30px;
         }
+    }
+
+    & > a:nth-child(2) {
+        position: absolute;
+        display: flex;
+        text-decoration: inherit;
+        color: #525252;
+        align-self: center;
+        left: 25px;
     }
 }
 
@@ -320,4 +350,13 @@ footer {
     }
 }
 
+//scss pour la page menu a la francaise
+
+.background-image {
+    & img {
+        width: 100%;
+        object-fit: cover;
+        height: 275px;
+    }
+}
 
