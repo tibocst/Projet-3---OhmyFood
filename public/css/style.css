@@ -43,15 +43,22 @@ body {
   padding: 0;
 }
 .button__heart > button i:nth-child(1) {
+  display: flex;
   color: #525252;
+  font-size: 2em;
+  cursor: pointer;
 }
 .button__heart > button i:nth-child(2) {
   display: none;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
 }
-.button__heart > button:active i:nth-child(1) {
+.button__heart > button:focus i:nth-child(1) {
   display: none;
 }
-.button__heart > button:active i:nth-child(2) {
+.button__heart > button:focus i:nth-child(2) {
   display: flex;
 }
 

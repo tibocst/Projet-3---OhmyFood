@@ -10,7 +10,7 @@
             font-weight: 400;
             font-size: 0.95em;
             color: #ffffff;
-            background : linear-gradient(to bottom right,  #FF79DA, #9356DC);
+            background: linear-gradient(to bottom right,  #FF79DA, #9356DC);
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             padding: 15px 20px 15px 20px;
             border-radius: 25px;
@@ -42,13 +42,20 @@
         border: inherit;
         padding: 0;
         & i:nth-child(1) {
+            display: flex;
             color: #525252;
+            font-size: 2em;
+            cursor: pointer;
         }
         & i:nth-child(2) {
             display: none;
+            background: linear-gradient(to bottom right,  #FF79DA, #9356DC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2em;
         }
-
-        &:active {
+        
+        &:focus{
             & i:nth-child(1) {
                 display: none;
             }
