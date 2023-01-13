@@ -69,6 +69,11 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   position: relative;
 }
+@media (min-width: 992px) {
+  .restaurant__card {
+    width: 300px;
+  }
+}
 .restaurant__card__newbutton {
   position: absolute;
   background-color: #99e2d0;
@@ -263,12 +268,26 @@ footer {
   background-color: #353535;
   padding: 25px;
 }
+@media (min-width: 992px) {
+  footer {
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  footer {
+    align-items: center;
+  }
+}
 footer a {
   color: inherit;
   text-decoration: inherit;
 }
-footer div:nth-child(1) > img {
-  height: 1.1em;
+footer div:nth-child(1) > p {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin: inherit;
+  color: white;
 }
 footer div:nth-child(2) {
   display: flex;
@@ -311,6 +330,18 @@ footer div:nth-child(2) div a p {
   border-top-right-radius: 40px;
   bottom: -40px;
 }
+@media (min-width: 992px) {
+  .background__image__div {
+    gap: 50px;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .background__image__div {
+    gap: 50px;
+    justify-content: center;
+  }
+}
 .background__image__div h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 500;
@@ -329,14 +360,25 @@ footer div:nth-child(2) div a p {
   flex-direction: column;
   gap: 40px;
 }
-.menu h2 {
+.menu > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (min-width: 992px) {
+  .menu > div:nth-child(1) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.menu > div:nth-child(1) h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1em;
   opacity: 0.8;
   margin: 5px 0;
 }
-.menu > div > div:nth-child(3) {
+.menu > div:nth-child(1) > div > div:nth-child(3) {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -397,17 +439,34 @@ footer div:nth-child(2) div a p {
   padding: 40px 0 40px 0;
   gap: 20px;
 }
+@media (min-width: 992px) {
+  .process {
+    gap: 50px;
+  }
+}
 .process h1 {
   margin: 0 0 0 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: x-large;
 }
+@media (min-width: 992px) {
+  .process h1 {
+    margin: auto;
+  }
+}
 .process__div {
   display: flex;
   flex-direction: column;
   padding: 0 15px 0 25px;
   gap: 20px;
+}
+@media (min-width: 992px) {
+  .process__div {
+    flex-direction: row;
+    gap: 5vw;
+    justify-content: center;
+  }
 }
 .process__div__button {
   display: flex;
@@ -436,6 +495,7 @@ footer div:nth-child(2) div a p {
   gap: 25px;
 }
 .process__div__button > a div {
+  justify-content: center;
   width: 100%;
   background-color: #f7f7f7;
   display: flex;
@@ -468,17 +528,34 @@ footer div:nth-child(2) div a p {
   background-color: #f7f7f7;
   padding: 50px 0;
 }
+@media (min-width: 992px) {
+  .restaurant {
+    gap: 50px;
+  }
+}
 .restaurant > h1 {
   margin: 0 0 0 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: x-large;
 }
+@media (min-width: 992px) {
+  .restaurant > h1 {
+    margin: auto;
+  }
+}
 .restaurant > div {
   display: flex;
   flex-direction: column;
   padding: 20px;
   gap: 15px;
+}
+@media (min-width: 992px) {
+  .restaurant > div {
+    flex-direction: row;
+    gap: 5vw;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

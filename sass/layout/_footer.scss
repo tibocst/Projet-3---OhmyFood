@@ -4,13 +4,25 @@ footer {
     gap: 20px;
     background-color: #353535;
     padding: 25px;
+    @media (min-width: 992px) {
+        align-items: center;
+    }
+
+    
+    @media (min-width: 768px) and (max-width:992px) {
+         align-items: center;   
+    }
     & a {
         color: inherit;
         text-decoration: inherit;
     }
     & div:nth-child(1) {
-        & > img {
-            height: 1.1em;
+        & > p {
+            font-family: 'Shrikhand', cursive;
+            font-weight: 500;
+            font-size: 1.2em;
+            margin: inherit;
+            color: white;
         }
     }
     & div:nth-child(2) {
