@@ -1,12 +1,4 @@
-// npm run sass pour lancer sass
-
-@import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
-
 @import "./base/base";
-@import "./base/typography";
 
 @import "./components/buttons";
 @import "./components/cards";
@@ -14,7 +6,6 @@
 
 @import "./layout/header";
 @import "./layout/footer";
-
 
 @import "./pages/menu";
 @import "./pages/index";
