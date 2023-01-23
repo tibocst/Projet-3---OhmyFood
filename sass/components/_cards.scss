@@ -111,17 +111,27 @@
         flex-direction: column;
         padding: 10px 0px 10px 10px;
         gap: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         & h3 {
             margin: inherit;
             font-family: 'Roboto', sans-serif;
             font-weight: 600;
             font-size: 1.1em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }   
+
         & p {
             margin: inherit;
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
             font-size: 0.95em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
     }
 
