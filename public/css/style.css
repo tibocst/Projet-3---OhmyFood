@@ -504,7 +504,6 @@ footer div:nth-child(2) div a p {
   gap: 25px;
 }
 .process__div__button > a div {
-  justify-content: center;
   width: 100%;
   background-color: #f7f7f7;
   display: flex;
