@@ -137,8 +137,6 @@
 
     & > div:nth-child(2) {
         display: flex;
-        left: 67px;
-        position: relative;
         & h3 {
             align-self: flex-end;
             margin: inherit;
@@ -150,14 +148,16 @@
 
         & > div {
             display: flex;
+            width: 0;
+            padding: 0px;
             background-color: #99e2d0;
             align-items: center;
             font-size: 1.7em;
-            padding: 0px 20px;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             
             & > .fa-circle-check {
+                position: absolute;
                 color: white;
             }
         }
@@ -165,15 +165,15 @@
 
     &:hover {
         & > div:nth-child(2) {
-                transform: translateX(-67px);
-                transition-property: transform;
-                transition-duration: 1000ms;
-                & > div {
-                    & > i {
-                        transform: rotate(360deg);
-                        transition: transform 1s;
+            & > div {
+                width: unset;
+                padding: 0px 35px;
+                transition: all 1s;
+                & > i {
+                    transform: translateX(-15px) rotate(360deg);
+                    transition: transform 1s;
                     }
-                }
+            }
         }
     }
 }
